@@ -49,13 +49,127 @@ section{
 .main{
     width: 100%;
     min-height: 100vh;
-    background-image: url();
+    background-image: url('images/background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    align-items: center;
 
 }
 
 
 .main h2{
     color: #f0f0f0;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 500;
 }
+
+/* the span element is inline and the inline element is not accepte margin and i can giv him margin and height */
+.main h2 span{
+    display: inline-block;
+    color: #601cfc;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.main h3{
+    color: #f0f0f0;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.main .main-btn{
+
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: white;
+    background-color: #3a6cf4;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+}
+
+.main .main-btn:hover{
+background-color: #601cfc;
+transform: scale(1.1,1.1);
+}
+
+.social-icons a{
+    color: white;
+    font-size: 1.6em;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+
+
+/* section tow servises
+
+*/
+
+
+.cards{
+    /* max-height: 100vh;
+    width: 100%;
+    text-align: center; */
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    /* this flex firection means  is the element (card) be in row  or colum*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.card{
+    background-color: #fff;
+    width: 20em;
+    /* text-align: center; */
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    font-size: 1em;
+    transform: scale(1.1,1.1);
+}
+.icon{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    font-size: 10em;
+    color: #3a6cf4;
+    margin: 15px 0;
+}
+
+.card-detail h3{
+    text-align: center;
+    color: #3a6cf4;
+    font-size: 1.5em;
+    margin: 10px ;
+}
+/* .card-detail p{
+
+} */
