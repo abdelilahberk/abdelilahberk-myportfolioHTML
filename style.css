@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-header{
-    background-color: #f0f0f0 ;
+header {
+    background-color: #f0f0f0;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -17,9 +17,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
+
 }
 
-.logo{
+.logo {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 700;
@@ -28,7 +29,7 @@ header{
 
 }
 
-.navigation a{
+.navigation a {
     text-decoration: none;
     font-size: 1em;
     font-weight: 500;
@@ -36,17 +37,19 @@ header{
     padding-left: 30px;
 
 }
-.navigation a:hover{
- 
+
+.navigation a:hover {
+
     color: #601cfc;
 
 }
 
 
-section{
+section {
     padding: 200px 100px;
 }
-.main{
+
+.main {
     width: 100%;
     min-height: 100vh;
     background-image: url('images/background.jpeg');
@@ -59,14 +62,14 @@ section{
 }
 
 
-.main h2{
+.main h2 {
     color: #f0f0f0;
     font-size: 1.5em;
     font-weight: 500;
 }
 
 /* the span element is inline and the inline element is not accepte margin and i can giv him margin and height */
-.main h2 span{
+.main h2 span {
     display: inline-block;
     color: #601cfc;
     font-size: 2.5em;
@@ -74,7 +77,7 @@ section{
     margin: 10px 0;
 }
 
-.main h3{
+.main h3 {
     color: #f0f0f0;
     font-size: 1.5em;
     font-weight: 700;
@@ -84,7 +87,7 @@ section{
 
 }
 
-.main .main-btn{
+.main .main-btn {
 
     display: inline-block;
     text-decoration: none;
@@ -99,12 +102,12 @@ section{
     transition: 0.7s ease;
 }
 
-.main .main-btn:hover{
-background-color: #601cfc;
-transform: scale(1.1,1.1);
+.main .main-btn:hover {
+    background-color: #601cfc;
+    transform: scale(1.1, 1.1);
 }
 
-.social-icons a{
+.social-icons a {
     color: white;
     font-size: 1.6em;
     text-decoration: none;
@@ -119,12 +122,13 @@ transform: scale(1.1,1.1);
 */
 
 
-.cards{
+.cards {
     /* max-height: 100vh;
     width: 100%;
     text-align: center; */
 }
-.title{
+
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,15 +137,19 @@ transform: scale(1.1,1.1);
     font-weight: 700;
     margin-bottom: 25px;
 }
-.card-container{
+
+.card-container {
     display: flex;
     justify-content: center;
     /* this flex firection means  is the element (card) be in row  or colum*/
     flex-direction: row;
     flex-wrap: nowrap;
+
+
+
 }
 
-.card{
+.card {
     background-color: #fff;
     width: 20em;
     /* text-align: center; */
@@ -151,11 +159,13 @@ transform: scale(1.1,1.1);
     margin: 10px;
     transition: 0.7s ease;
 }
-.card:hover{
+
+.card:hover {
     font-size: 1em;
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
 }
-.icon{
+
+.icon {
     /* display: flex;
     justify-content: center; */
     text-align: center;
@@ -164,12 +174,234 @@ transform: scale(1.1,1.1);
     margin: 15px 0;
 }
 
-.card-detail h3{
+.card-detail h3 {
     text-align: center;
     color: #3a6cf4;
     font-size: 1.5em;
-    margin: 10px ;
+    margin: 10px;
 }
+
 /* .card-detail p{
 
 } */
+
+.projects {
+    background-color: #060606;
+}
+
+.projects .project-container {
+
+    margin-top: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 20em;
+    background-color: white;
+    border: 2px solid white;
+    min-height: 14em;
+    overflow: hidden;
+    border-radius: 15px;
+    /* padding: 25px; */
+    margin: 15px;
+    transition: 0.7s ease;
+
+}
+
+.project-card:hover {
+
+    transform: scale(1.1, 1.1);
+}
+
+.project-card:hover .project-img {
+
+    opacity: 0.9;
+}
+
+
+.project-img img {
+    width: 100%;
+}
+
+
+.project-detail {
+    padding: 15px;
+
+}
+
+.project-category {
+
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+
+
+}
+
+.more-details {
+    text-decoration: none;
+
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #3d0eab;
+}
+
+
+/* contacts */
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.contact-card {
+    width: 20em;
+    min-height: 10em;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.contact-card .icon {
+    font-size: 7em;
+
+}
+
+.contact-detail {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+
+
+}
+
+.contact-detail p {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(105, 29, 212);
+    padding: 15px;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-part1 {
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+}
+
+footer .footer-part1 span {
+    font-weight: 900;
+}
+
+
+
+/* responsive  */
+
+
+@media (max-width:1023px) {
+    header {
+        padding: 5px 20px;
+    }
+
+    .navigation a {
+        padding-left: 5px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 20em;
+        padding: 25px 15px;
+        margin: 25px 5px;
+    }
+
+    .contact-card .icon {
+        font-size: 5em;
+    }
+
+    .contact-container {
+
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+
+    .main h2 span {
+        font-size: 1.5em;
+    }
+
+    .main h3 {
+        font-size: 1em;
+
+
+    }
+    .main .main-btn {
+
+       
+        font-size: 1;
+        padding: 10px 15px;
+     
+    }
+
+
+}
+
+@media(max-width:280px)
+{
+    body{
+        font-size: 10px;
+    }
+}
